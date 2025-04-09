@@ -12,12 +12,25 @@ class AttackPokemon {
         $this->probabilitySpecialAttack = $probabilitySpecialAttack;
     }
 
+    public function getAttackMinimal() {
+        return $this->attackMinimal;
+    }
+    public function getAttackMaximal() {
+        return $this->attackMaximal;
+    }
+    public function getSpecialAttack() {
+        return $this->specialAttack;
+    }
+    public function getProbabilitySpecialAttack() {
+        return $this->probabilitySpecialAttack;
+    }
+
     public function getAttackPoints() {
         return rand($this->attackMinimal, $this->attackMaximal);
     }
 
-    public function useSpecialAttack() {
-        return (rand(1, 100) <= $this->probabilitySpecialAttack) ? $this->specialAttack : 0;
+    public function isSpecialAttack() {
+        return (rand(1, 100) <= $this->probabilitySpecialAttack);
     }
 }
 ?>

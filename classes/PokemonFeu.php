@@ -1,6 +1,5 @@
 <?php
 require_once 'Pokemon.php'; // Ensure to include the base class
-require_once 'Pokemon.php'; // Ensure to include the AttackPokemon class
 
 class PokemonFeu extends Pokemon {
     public function attack($opponent) {

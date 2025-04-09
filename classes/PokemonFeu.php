@@ -16,9 +16,9 @@ class PokemonFeu extends Pokemon {
 
         if ($specialAttack) {
             $attackPoints *= $this->attackPokemon->getSpecialAttack();
-            echo "<strong>" . $this->name . "</strong> used a SPECIAL attack of <strong>" .  $attackPoints . "</strong> against <strong>" . $opponent->getName() . "</strong>!<br>";
+            echo "<strong>" . $this->name . "</strong> used a SPECIAL attack of <strong>" .  $attackPoints . "x" . $mult . "</strong> against <strong>" . $opponent->getName() . "</strong>!<br>";
         } else {
-            echo "<strong>" . $this->name . "</strong> used a normal attack of <strong>" .  $attackPoints . "</strong> against <strong>" . $opponent->getName() . "</strong>!<br>";
+            echo "<strong>" . $this->name . "</strong> used a normal attack of <strong>" .  $attackPoints . "x" . $mult . "</strong> against <strong>" . $opponent->getName() . "</strong>!<br>";
         }
 
         $opponent->recieveDamage($attackPoints * $mult);

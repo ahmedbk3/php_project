@@ -42,7 +42,7 @@ class Pokemon {
 
     public function isDead() {
         if ($this->hp <= 0) {
-            $this.setHp(0);
+            $this->setHp(0);
             return true;
         } else {
             return false;
@@ -50,13 +50,13 @@ class Pokemon {
     }
 
     public function whoAmI() {
-        echo "<Strong>Name: </strong>" . $this->name . "<br>";
-        echo "<strong>HP: </strong>" . $this->hp . "<br>";
-        echo "<strong>Image: </strong><img src='" . $this->url . "' alt='" . $this->name . "' style='width: 100px; height: 100px;'><br>";
-        echo "<strong>Attack Power: </strong>" . $this->attackPokemon->getAttackMaximal() . "<br>";
-        echo "<strong>Min Attack Power: </strong>" . $this->attackPokemon->getAttackMinimal() . "<br>";
-        echo "<strong>Special Attack: </strong>" . $this->attackPokemon->getSpecialAttack() . "<br>";
-        echo "<strong>Special Attack Probability: </strong>" . $this->attackPokemon->getProbabilitySpecialAttack() . "%<br>";
+        echo "<h2>" . $this->name . "</h2><br>";
+        echo "<img src='" . $this->url . "' alt='" . $this->name . "' style='width: 200px; height: 200px;'><br><br><br>";
+        echo "<strong>HP: </strong>" . $this->hp . "<br><br>";
+        echo "<strong>Attack Power: </strong>" . $this->attackPokemon->getAttackMaximal() . "<br><br>";
+        echo "<strong>Min Attack Power: </strong>" . $this->attackPokemon->getAttackMinimal() . "<br><br>";
+        echo "<strong>Special Attack: </strong>" . $this->attackPokemon->getSpecialAttack() . "<br><br>";
+        echo "<strong>Special Attack Probability: </strong>" . $this->attackPokemon->getProbabilitySpecialAttack() . "%<br><br>";
     }
 
     public function attack(Pokemon $p) {

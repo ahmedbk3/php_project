@@ -52,6 +52,17 @@ if ($nbVisites === null) {
             border-radius: 5px;
             text-decoration: none;
         }
+        .link-button {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #444444;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
@@ -59,6 +70,8 @@ if ($nbVisites === null) {
     <div class="message">
         <p><?php echo $message; ?></p>
         <a href="?reset=true" class="reset-button">Reset Session</a>
+        <a href="student.php" class="link-button">Student Grades</a>
+        <a href="combat.php" class="link-button">Pokemon Fights</a>
     </div>
 </body>
 </html>
